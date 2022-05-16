@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GestaoTestes.Arquivos\GestaoTestes.Arquivos.csproj" />
+    <ProjectReference Include="..\GestaoTestes.Dominio\GestaoTestes.Dominio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ModuloMatéria\TabelaMateriaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ModuloTeste\TabelaTesteControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
